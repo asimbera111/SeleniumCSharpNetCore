@@ -5193,11 +5193,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Asim\\Automation\\SeleniumCSharpCore\\SeleniumCSharpNetCore\\SeleniumCSharpNetCore\\SeleniumCSharpNetCore.csproj",
+      "projectUniqueName": "C:\\Asim\\Automation\\SeleniumCSharpNetCore\\SeleniumCSharpNetCore\\SeleniumCSharpNetCore.csproj",
       "projectName": "SeleniumCSharpNetCore",
-      "projectPath": "C:\\Asim\\Automation\\SeleniumCSharpCore\\SeleniumCSharpNetCore\\SeleniumCSharpNetCore\\SeleniumCSharpNetCore.csproj",
+      "projectPath": "C:\\Asim\\Automation\\SeleniumCSharpNetCore\\SeleniumCSharpNetCore\\SeleniumCSharpNetCore.csproj",
       "packagesPath": "C:\\Users\\abera\\.nuget\\packages\\",
-      "outputPath": "C:\\Asim\\Automation\\SeleniumCSharpCore\\SeleniumCSharpNetCore\\SeleniumCSharpNetCore\\obj\\",
+      "outputPath": "C:\\Asim\\Automation\\SeleniumCSharpNetCore\\SeleniumCSharpNetCore\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\dotnet\\sdk\\NuGetFallbackFolder"
