@@ -2,16 +2,26 @@
 
 namespace SeleniumCSharpNetCore.Pages
 {
-    public class LoginPage : DriverHelper
+    public class LoginPage
     {
-        IWebElement txtUsername => Driver.FindElement(By.Name("UserName"));
-        IWebElement txtPassword => Driver.FindElement(By.Name("Password"));
-        IWebElement btnLogin => Driver.FindElement(By.CssSelector(".btn-default"));
+        private IWebDriver _driver;
 
-        public void Login()
+        public LoginPage(IWebDriver driver) 
         {
-            txtUsername.SendKeys("admin");
-            txtPassword.SendKeys("password");
+            _driver = driver;
+        }
+        
+        IWebElement txtUsername => _driver.FindElement(By.Name("UserName"));
+        IWebElement txtPassword => _driver.FindElement(By.Name("Password"));
+        IWebElement btnLogin => _driver.FindElement(By.CssSelector(".btn-default"));
+
+        public void EnterUsernameAndPassword(string username, string password)
+        {
+            txtUsername.SendKeys(username);
+            txtPassword.SendKeys(password);            
+        }
+        public void ClickLogin()
+        {
             btnLogin.Click();
         }
     }

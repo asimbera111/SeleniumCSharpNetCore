@@ -1,14 +1,17 @@
 ﻿using OpenQA.Selenium;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace SeleniumCSharpNetCore.Pages
 {
-    public class HomePage : DriverHelper
+    public class HomePage
     {
-        IWebElement lnkLogin => Driver.FindElement(By.LinkText("Login"));
-        IWebElement lnkLogOff => Driver.FindElement(By.LinkText("Log off"));
+        private IWebDriver _driver;
+        public HomePage(IWebDriver driver)
+        {
+            _driver = driver;
+        }
+
+        IWebElement lnkLogin => _driver.FindElement(By.LinkText("Login"));
+        IWebElement lnkLogOff => _driver.FindElement(By.LinkText("Log off"));
 
         public void ClickLogin()
         {
